@@ -44,10 +44,6 @@ void q_short(int low, int high)
 	if (low > high)
 		return;
 
-	// partion the list into two parts
-	//one containing elements less that or equal to pivot
-	// other containing elements greather than pivot
-
 	pivot = arr[low];
 
 	i = low + 1;
@@ -71,3 +67,8 @@ void q_short(int low, int high)
 		cmp_count++;
 
 		if (i < j)
+		{
+			swap(i, j);
+			mov_count++;
+		}
+	}
