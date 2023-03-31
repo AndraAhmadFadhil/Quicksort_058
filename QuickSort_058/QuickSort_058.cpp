@@ -72,3 +72,5 @@ void q_short(int low, int high)
 			mov_count++;
 		}
 	}
+
+	if (low < j)
