@@ -80,3 +80,4 @@ void q_short(int low, int high)
 	}
 
 	q_short(low, j - 1);
+	q_short(j + 1, high);
